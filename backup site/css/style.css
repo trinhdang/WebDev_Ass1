@@ -11,15 +11,6 @@
 	
 }
 
-body {
-	font-size: 1.1em;
-	line-height: 1.5;
-	padding: 0;
-	margin: 0;
-	font-family: 'Arial, helvetica, sans-serif';
-	background-color: #f4f4f4; 
-}
-
 h1 {
 	font-size: 3em;
 }
@@ -28,25 +19,14 @@ h2 {
 	font-size: 2em;
 }
 
-/*Style for div container*/
-.myContainer {
+.container {
 	margin: 0 auto;
-	width: 90vw;	
+	width: 90%;	
 	
 }
 
-/*Style for the brief section*/
-#brief {
-	min-height: 25vh;
-	background-color: #7b8091;
-}
-
 header {
-	width: 100%;
-	background-color: #2a3a4a;
-	padding: 1.5em 0;
-	line-height: 2.3m;
-	font: white;
+	background-color: #415874;
 	min-height: 7vh;
 	
 	/*Create a grid here: 14 columns*/
@@ -56,38 +36,27 @@ header {
 
 .navbar-brand {
 	/*grid-column: 1/2;*/
-	width: 2em;
-	height: 2em;
+	width: 2.5em;
+	height: 2.5em;
 	/*margin: auto;*/
 }
 
 
 #nav-brand-title {
-	padding-right: 1em;
-	color: white;
+	padding-right: 1em
 }
 
 .dropdown-menu {
 	background-color: #415874;
 }
 
-/*Set style for the drop down items of the nav bar*/
-nav .dropdown-item {
-	color: white;
-}
-/*
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	
 }
-*/
-/*
-#nav_ul {
-	float: right;
-}
-*/
+
 nav li {
 	display: block;
 }
@@ -95,14 +64,14 @@ nav a {
 	/*display: block;*/
 	color: white;
 	text-align: center;
-	font-size: 1.1em;
+	font-size: 1.5em;
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 14px 16px;
 }
 
 #active a {
-	color: #2a9b35;
+	color: green;
 }
 
  a:hover:not(.active) {
@@ -115,20 +84,13 @@ main {
 }
 
 #showcase {
-	/*width: 95%;  ask daniel*/
-	min-height: 40vh;
 	background-color: #060619;
 	background-image: url("../images/backgroundImg.jpg");
 	background-size: 100% 100%;
 	background-repeat: repeat-y;
 	padding: 4em 0 2em 0;
 	text-align: center;
-	color: #f2f2f2;
-	font-size: 1.1em;
-}
-
-#showcase h1 {
-	font-size: 2.0em;
+	color: #d4d4d4;
 }
 
 #contact {
@@ -181,9 +143,9 @@ form {
 }
 
 footer {
-	background-color: #2a3a4a;
-	color: white;
-	min-height: 4.2em;
+	background-color: gray;
+	color: blue;
+	height: 8vh;
 	padding: 1em 0;
 	text-align: center;
 }
@@ -192,7 +154,7 @@ footer {
 
 /*The below styles will be customised and changed when displaying website on PC/Laptop/ipad/tablet
 */
-/*Pc responsiveness*/
+
 @media screen and (min-width: 768px) {
 	nav li{
 		display: inline-block;
@@ -222,16 +184,6 @@ footer {
 		margin: 0 auto;
 		margin-bottom: 1.5em;
 
-	}
-
-	#showcase {
-		/*width: 80%; ask daniel*/
-		min-height: 30vh;
-		font-size: 1.5em;
-	}
-
-	#showcase h1 {
-		font-size: 3.3em;
 	}
 	
 }

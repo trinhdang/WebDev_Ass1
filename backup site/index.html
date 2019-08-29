@@ -2,9 +2,8 @@
 <html>
 <!--HEAD-->
 <head>
-	<title>ITWD6.408: Assignment </title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>ITWD6.408: Lab1 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,14 +22,14 @@
 		
 		
 		<!--Nav Bar-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-mediumseagreen">
+		<nav class="navbar navbar-expand-lg navbar-light bg-mediumseagreen">
 			<img class="navbar-brand text-left" src="images/logo.svg" alt="Logo"/>
 			<h2 class="text-left" id="nav-brand-title">ITWD6.408</h2>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav navbar-right" id="nav_ul">
+				<ul class="navbar-nav">
 					<li class="nav-item active" id= "active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
@@ -39,15 +38,15 @@
 							Forms
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="htmlForm.html">HTML</a>
-							<a class="dropdown-item" href="googleForm.html">Google</a>
+							<a class="dropdown-item" href="#">HTML</a>
+							<a class="dropdown-item" href="#">Google</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							XML
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<div class="dropdown-menu bg-green" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="#">XML Rules</a>
 							<a class="dropdown-item" href="#">XML RSS</a>
 						</div>
@@ -63,7 +62,7 @@
 						</div>
 					</li>
 					<li class="nav-intem">
-						<a class="nav-link" href="javascript.html">Javascript<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">Javascript<span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 			</div>
@@ -75,7 +74,7 @@
 	<main>
 		<!--Section 1: Show Case-->
 		<section id="showcase">
-			<div class="myContainer">
+			<div class="container">
 				<h1>Welcome to my Web Development Revision Site</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet fringilla erat. Sed maximus sit amet orci eget porta. In ultricies placerat ex, ac fermentum est. Phasellus mollis purus in enim rutrum suscipit. Fusce a sollicitudin velit.
 				Suspendisse dui sem, ultricies nec auctor nec, tincidunt ac magna. Curabitur nec ipsum at leo vulputate dignissim at sit amet velit.
@@ -86,7 +85,7 @@
 		<!--Bootstrap Demo-->
 		<section id="bootsrap-demo">
 			<h2>Bootstrap : 2 column demo</h2>
-			<div class="myContainer">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare mi non dui cursus pellentesque. Integer ultrices purus arcu, eget laoreet eros scelerisque id. Quisque non aliquet ipsum, id feugiat enim. Vestibulum vehicula suscipit molestie. Proin finibus ac tortor ut pretium.
@@ -104,21 +103,38 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- Section 2: Contact Form-->
+		<section id="contact">
+			<div class="container">
+				<h2>Contact Us</h2>
+					<form>
+						<div class="form-group">
+							<label for="inputName">First Name</label>
+							<input type="text" class="form-control" placeholder="First Name">
+						</div>
+						<div class="form-group">
+							<label for="inputLastName">Last Name</label>
+							<input type="text" class="form-control" placeholder="Last Name">
+						</div>
+						<div class="form-group">
+						  <label for="exampleInputEmail1">Email address</label>
+						  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+						  <label for="messageTextArea">Message</label>
+						  <textarea class="form-contol" rows="3"></textarea>
+						</div>
+						
+						<button type="submit" class="btn btn-primary" id="formSubmitButton">Submit</button>
+						<button type="reset" class="btn btn-primary" id="formButton">Reset</button>
+					</form>
+			</div>
+		</section>
+		
 		<!--Section 3: about us-->
 		<section id="about-us">
-			<div class="myContainer">
-				<!--Card for web technologies-->
-				<div class="card" id="myWebTech">
-					<h2>My Web Technologies</h2>
-				</div>
-				<!--Card for bio-->
-				<div class="card" id="bio">
-					<h2>Bio</h2>
-					<div class=""> <!--Need to finish created 24/8/19-->
-
-					</div>
-				</div>
+			<div class="container">
 				<h2>About us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare mi non dui cursus pellentesque. Integer ultrices purus arcu, eget laoreet eros scelerisque id. Quisque non aliquet ipsum, id feugiat enim. Vestibulum vehicula suscipit molestie. Proin finibus ac tortor ut pretium.
 					Vestibulum dictum facilisis fringilla. Proin porta justo et vehicula porttitor. In a tellus nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas volutpat sollicitudin auctor. Nam lorem neque, ullamcorper sit amet finibus quis, tincidunt et felis. Ut a neque id odio fermentum ultrices. Mauris egestas urna orci, ac sodales tortor iaculis ac. Vestibulum porttitor viverra justo, semper dignissim eros mollis mollis. Aenean nunc urna, congue cursus turpis non, egestas viverra massa.
@@ -127,21 +143,11 @@
 				</p>
 			</div>
 		</section>
-
-		<!--Statement of Authenticity Section-->
-		<section id="authenticitySection">
-			<div class="myContainer">
-				<h2>Statement of Authenticity</h2>
-				<p>I comfirm that:</p>
-				<p>This is an original assignment and is entirely my own work.</p>
-				
-			</div>
-		</section>
 	</main>
-
+	
 	<!--Footer-->
 	<footer>
-		<div class="myContainer">
+		<div class="container">
 			<p>Created By: Travis Falkenberg</p>
 		</div>
 	</footer>

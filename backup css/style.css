@@ -1,0 +1,176 @@
+/* Mobile first Approach:
+	All tbe bellow csss style will be defined for mobile devices
+*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1em;
+	
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;	
+	
+}
+
+header {
+	background-color: mediumseagreen;
+	min-height: 7vh;
+	
+	/*Create a grid here: 14 columns*/
+	display: grid;
+	grid-template-columns: 2em repeat(12, 1fr) 2em;
+	
+}
+
+
+.header-branding img {
+	grid-column: 1/2;
+	width: 2.5em;
+	height: 2.5em;
+	/*margin: auto;*/
+}
+
+
+.header-branding h2 {
+	grid-column: 3/4;
+	padding: 0;
+	padding-top: 0.3em;
+	font-size: 1.1em;
+	/*margin-top: auto;
+	margin-bottom: auto;*/
+}
+
+
+.header-branding {
+	grid-column: 2 / 7;
+	display: grid;
+	grid-template-columns: auto 1em 1fr;
+}
+
+
+nav {
+	grid-column: 7/14;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+nav a {
+	display: block;
+	color: #464646;
+	text-align: center;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px 16px;
+}
+
+.active {
+	background-color: white;
+}
+
+nav a:hover:not(.active) {
+	color: yellow;
+}
+
+main {
+	background-color: #E6E6E6;
+}
+
+#showcase {
+	background-color: #060619;
+	padding: 4em 0 2em 0;
+	text-align: center;
+	color: #d4d4d4;
+	background-size: contain;
+}
+
+#contact {
+	background-color: #689569;
+	width: 100%;
+	padding: 2em 0;
+}
+
+
+
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	margin-bottom: 16px;
+}
+
+input[type=reset] {
+	margin-bottom: 16px;
+}
+
+form {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+#about-us {
+	padding: 2em 0;
+}
+
+footer {
+	background-color: gray;
+	color: blue;
+	height: 8vh;
+	padding: 1em 0;
+	text-align: center;
+}
+
+
+
+/*The below styles will be customised and changed when displaying website on PC/Laptop/ipad/tablet
+*/
+
+@media screen and (min-width: 768px) {
+	nav li{
+		display: inline-block;
+	} 
+
+	form {
+		width: 50vw;
+		margin: 0 auto 1em 20vw;
+	}
+	
+	.header-branding img {
+		width: 3em;
+		height: 3em;
+	}
+	
+	.header-branding h2 {
+		font-size: 2em;
+	}
+	
+	
+	
+}
