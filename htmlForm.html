@@ -2,14 +2,15 @@
 <html>
     <!--HEAD-->
     <head>
-        <title>ITWD6.408: FORM</title>
+        <title>ITWD6.408: HTML FORM</title>
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
-	    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="styleshee" href="css/htmlFormStyle.css">
     </head>
     <!--THE BODY-->
     <body>
@@ -33,7 +34,7 @@
 						    </a>
 						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							    <a class="dropdown-item" href="#">HTML</a>
-							    <a class="dropdown-item" href="#">Google</a>
+							    <a class="dropdown-item" href="googleForm.html">Google</a>
 						    </div>
 					    </li>
 					    <li class="nav-item dropdown">
@@ -56,7 +57,7 @@
 						    </div>
 					    </li>
 					    <li class="nav-intem">
-						    <a class="nav-link" href="#">Javascript<span class="sr-only">(current)</span></a>
+						    <a class="nav-link" href="javascript.html">Javascript<span class="sr-only">(current)</span></a>
 					    </li>
 				    </ul>
 			    </div>
@@ -65,66 +66,152 @@
         <!--Main Content Area-->
         <main>
             <!--This section is for the Heading of the webpage-->
-            <section id="headingSection">
-                <div class="container">
+            <section id="brief">
+                <div class="myContainer">
                     <h1>HTML Form</h1>
                     <p>Form generated to post to an email account.</p>
                 </div>
             </section>
             <!--This section is for the form-->
             <section>
-                <div class="container">
-                    <form>
-                        First Name:
-                        <input type="text" name="firstName" placeholder="First Name"><br>
-                        Last Name:
-                        <input type="text" name="lastName" placeholder="Last Name"><br>
-                        Address<br>
-                        line 1:
-                        <input type="text" name="line1" placeholder="Address line 1"><br>
-                        line 2:
-                        <input type="text" name="line2" placeholder="Address line 2"><br>
-                        Town/City:
-                        <input type="text" name="town/City" placeholder="Town/City"><br>
-                        <div>
-                            Gender:<br>
-                            
-                            <input type="radio" name="gender" value="male">
-                            Male
-                            <input type="radio" name="gender" value="female">
-                            Female
-                            <input type="radio" name="gender" value="other">
-                            Other
+                <div class="myContainer">
+                    <form name="techForm" action="mailto:travis.falkenberg141@gmail.com?subject=HTML-Forms" enctype="text/plain" method="POST">
+                        <!--For First Name-->
+                        <div class="form-group row">
+                          <label for="firstName" class="col-sm-3 col-form-label">First Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                          </div>
                         </div>
-                        <div>
-                            Mobile Phone Type:<br>
-                            <input type="radio" name="phoneType" value="windows">
-                            Windows
-                            <input type="radio" name="phoneType" value="apple">
-                            Apple
-                            <input type="radio" name="phoneType" value="android">
-                            Android
-                            <input type="radio" name="phoneType" value="other">
-                            Other
+                        <!--For Last Name-->
+                        <div class="form-group row">
+                            <label for="lastName" class="col-sm-3 col-form-label">Last Name</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <!--Address Lable-->
+                        <div class="form-group row">
+                            <label class="lead" for="Address">Address</label>
+                        </div>
+                        <!--For Address Line 1-->
+                        <div class="form-group row">
+                            <label for="line1" class="col-sm-3 col-form-label">line 1</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="line1" name="addressLine1" placeholder="Address line 1" required>
+                            </div>
+                        </div>
+                        <!--For Address Line 2-->
+                        <div class="form-group row">
+                            <label for="line2" class="col-sm-3 col-form-label">Line 2</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="line2" name="addressLine2" placeholder="Address line 2">
+                            </div>   
+                        </div>
+                        <!--For Town/City-->
+                        <div class="form-group row">
+                            <label for="town/city" class="col-sm-3 col-form-label">Town/City</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="town/city" name="town/city" placeholder="Town/City" required>
+                            </div>
+                        </div>
+                        <!--For Gender Label-->
+                        <div class="form-group row">
+                            <label class="lead">Gender</label>
+                        </div>
+                        <!--Radio Buttons for Gender-->
+                        <fieldset class="form-group">
+                          <div class="row">
+                            <div class="col-sm-10">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genderOption" id="maleGender" value="male" checked>
+                                <label class="form-check-label" for="maleGender">
+                                  Male
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genderOption" id="femaleGender" value="female">
+                                <label class="form-check-label" for="femaleGender">
+                                  Female
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genderOption" id="otherGender" value="other">
+                                <label class="form-check-label" for="otherGender">
+                                  Other
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <!--For Phones Label-->
+                        <div class="form-group row">
+                            <label class="lead">Mobile Phone Type:</label>
+                        </div>
+                        <!--Radio Buttons for mobile-->
+                        <fieldset class="form-group">
+                          <div class="row">
+                            <div class="col-sm-10">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="mobileOption" id="windowsPhone" value="windows" checked>
+                                <label class="form-check-label" for="windowsPhone">
+                                  Windows
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="mobileOption" id="iOSPhone" value="iOS">
+                                  <label class="form-check-label" for="iOSPhone">
+                                    iOS
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="mobileOption" id="androidPhone" value="android">
+                                <label class="form-check-label" for="androidPhone">
+                                  Android
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <!--For Mobile Provider Label-->
+                        <div class="form-group row">
+                          <label class="lead">Mobile Provider:</label>
+                        </div>
+                        <!--Dropdown menu for mobile provider-->
+                        <div class="form-group">
+                          <select class="custom-select">
+                            <option name="MobileProvider" value="none">None</option>
+                            <option name="MobileProvider" value="spark">Spark</option>
+                            <option name="MobileProvider" value="2degrees">2Degrees</option>
+                            <option name="MobileProvider" value="now">Now</option>
+                            <option name="MobileProvider" value="other">Other</option>
+                          </select>
                         </div>
 
-                        Mobile Provider:
-                        <select id="provider" name="provider">
-                            <option value="spark">Spark</option>
-                            <option value="2degrees">2degrees</option>
-                            <option value="Vodafone">Vodafone</option>
-                        </select>
-                        Do you use your phone to study? Please Explain
-                        <textarea id="subject" name="subject" style="height: 200px"></textarea>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                    </form>
+                        <!--Label for text area-->
+                        <div class="form-group row">
+                          <label class="lead">Do you use your phone for studying?Please explain:</label>
+                        </div>
+                        <!--Textarea for phone for studing-->
+                        <div class="form-group row">
+                          <textarea class="form-control" id="formTextArea" name="phoneForStudying" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group row">
+                          <div class="col-sm-5">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                          <div class="col-sm-5">
+                            <button type="reset" class="btn btn-primary">Reset</button>
+                          </div>
+                        </div>
+                      </form>
                 </div>
             </section>
         </main>
         <!--Footer-->
         <footer>
-            <div class="container">
+            <div class="myContainer">
                 <p>Advanced Web Design</p>
             </div>
         </footer>
