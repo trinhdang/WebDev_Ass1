@@ -73,7 +73,45 @@
             </section>
             <!--Section for the javascript exercises-->
             <section id="javaScriptSection">
+                <div class="myContainer">
+                    <!--Form for the vowels javascript-->
+                    <form name="vowelsForm">
+                        <!--Heading for Vowels Javascript Exercise-->
+                        <div class="form-group row">
+                            <label class="lead" for="vowels">Only Vowels</label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="title" class="col-sm-3 col-form-label">Enter Vowels</label>
+                            <div class="cpl-sm-9">
+                                <input type="text" class="form-control" id="vowelInput">
+                            </div>
+                        </div>
+                        <!--Button for validating vowels-->
+                        <div class="form-group row">
+                            <button type="button" onclick="checkVowel()">Validate</button>
+                        </div>
+                        <!--Label for the answer of vowel-->
+                        <div class="form-group row">
+                            <label for="vowelAnswer" id="vowelAnswerLabel"></label>
+                        </div>
+                    </form>
 
+                    <!--Form for showing and hiding an image with javascript-->
+                    <form name="showHideForm">
+                        <!--Heading for image show hid javascript section-->
+                        <div class="form-group row">
+                            <label class="lead">Show and Hide image when checked check box</label>
+                        </div>
+                        <!--Div for image and checkbox-->
+                        <div class="form-group row">
+                            <input type="checkbox" class="col-sm-3" onclick="checkDisplayImg()">
+                            <!--Div for image-->
+                            <div class="col-sm-9">
+                                <img src="#" alt="Image For checkbox">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
     </body>
