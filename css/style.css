@@ -17,7 +17,8 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Arial, helvetica, sans-serif';
-	background-color: #f4f4f4; 
+	background-color: #f4f4f4;
+	
 }
 
 h1 {
@@ -36,7 +37,7 @@ h2 {
 }
 
 /*Style for the brief section*/
-#brief {
+.brief {
 	min-height: 25vh;
 	background-color: #7b8091;
 }
@@ -48,6 +49,7 @@ header {
 	line-height: 2.3m;
 	font: white;
 	min-height: 7vh;
+	border-bottom: #2a9b35 3px solid;
 	
 	/*Create a grid here: 14 columns*/
 	
@@ -112,6 +114,7 @@ nav a {
 
 main {
 	background-color: #E6E6E6;
+	border-bottom: #2a9b35 3px solid;
 }
 
 #showcase {
@@ -130,6 +133,54 @@ main {
 #showcase h1 {
 	font-size: 2.0em;
 }
+
+#about-me {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+/*Style the web technologies box*/
+#webTechBox {
+	background-color: #007491;
+}
+
+/*Style the web technologies box heading*/
+#webTechBox h2 {
+	size: 1.5em;
+}
+
+/*Style for the webtechnologies box paragraph*/
+#webtechBox p {
+	size: 1.1em;
+}
+
+/*Style for the bio box*/
+#bioBox {
+	background-color: #2a9b35;
+}
+
+/*Style for bio box heading*/
+#bioBox h2 {
+	size: 1.5em;
+}
+
+/*Style container for image and paragraph will be grid view*/
+#bioCard {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/*Style for bio box paragraph*/
+#bioBox p {
+	size: 1.2em;
+}
+
+/*Style for bio box image*/
+#bioImg {
+	height: 8.0em;
+	width: 8.0em;
+	border-radius: 50%;
+}
+
 
 #contact {
 	background-color: #689569;
@@ -232,6 +283,10 @@ footer {
 
 	#showcase h1 {
 		font-size: 3.3em;
+	}
+	/*Change about-me section to fit two elements next to eachother*/
+	#about-me {
+		grid-template-columns: 1fr 1fr;
 	}
 	
 }
