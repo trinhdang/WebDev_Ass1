@@ -1,0 +1,18 @@
+#rssDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.box {
+    background-color: #b3a98a;
+    margin: 1em;
+    padding: 2em 1em;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+    #rssDisplay {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
