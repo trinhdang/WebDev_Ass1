@@ -25,14 +25,16 @@ h1 {
 	font-size: 3em;
 }
 
+/*commented out because effecting other h2 
 h2 {
 	font-size: 2em;
 }
+*/
 
 /*Style for div container*/
 .myContainer {
 	margin: 0 auto;
-	width: 90vw;	
+	width: 95vw;	
 	
 }
 
@@ -55,6 +57,7 @@ header {
 	
 }
 
+/*==================THIS SECTION IS FOR STYLING THE NAV SECTION============================================*/
 
 .navbar-brand {
 	/*grid-column: 1/2;*/
@@ -134,6 +137,8 @@ main {
 	font-size: 2.0em;
 }
 
+/*==================THIS SECTION IS FOR STYLING THE ABOUT-ME SECTION============================================*/
+
 #about-me {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -181,11 +186,54 @@ main {
 	border-radius: 50%;
 }
 
+/*==================THIS SECTION IS FOR STYLING THE SKILLS SECTION============================================*/
+
+/*Style for the div that holds all the skill boxes*/
+#skillGridContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*Style for skill box*/
+.skillBox {
+	background-color: #E0E0E0;
+	margin: 1.0em;
+	padding: 2em 1em;
+	text-align: center;
+}
+
+/*Style for skill box heading*/
+#skillBox h2 {
+	size: 1.5em;
+}
+
+/*Style for skill box paragraph*/
+#skillBox p {
+	size: 1.2em;
+}
+
+/*==================THIS SECTION IS FOR STYLING THE AUTHENTICATION SECTION============================================*/
+
+/*Style for the authentication Section*/
+#authentication {
+	background-color: tomato;
+
+}
+
+#authentication h2 {
+	size: 1.5em;
+}
+
+#authentication p {
+	size: 1.2em;
+	padding-bottom: 1em;
+}
 
 #contact {
 	background-color: #689569;
 	width: 100%;
 	padding: 2em 0;
+	margin-bottom: 0;
 }
 
 
@@ -249,6 +297,11 @@ footer {
 		display: inline-block;
 	} 
 
+	/*Style for myContainer*/
+	.myContainer {
+		width: 80vw;
+	}
+
 	form {
 		width: 50vw;
 		margin: 0 auto;
@@ -289,4 +342,8 @@ footer {
 		grid-template-columns: 1fr 1fr;
 	}
 	
+	/*laptop style for skillGridContainer*/
+	#skillGridContainer {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
