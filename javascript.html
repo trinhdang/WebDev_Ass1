@@ -10,6 +10,7 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/style.css">
+        <script src="Javascript/javascript.js"></script>
     </head>
     <!--Body-->
     <body>
@@ -88,7 +89,7 @@
                         </div>
                         <!--Button for validating vowels-->
                         <div class="form-group row">
-                            <button type="button" onclick="checkVowel()">Validate</button>
+                            <button type="button" onclick="isVowel()">Validate</button>
                         </div>
                         <!--Label for the answer of vowel-->
                         <div class="form-group row">
@@ -104,12 +105,31 @@
                         </div>
                         <!--Div for image and checkbox-->
                         <div class="form-group row">
-                            <input type="checkbox" class="col-sm-3" onclick="checkDisplayImg()">
+                            <input type="checkbox" id="imgCheckBox" class="col-sm-3" onclick="checkDisplayImg()">
                             <!--Div for image-->
                             <div class="col-sm-9">
-                                <img src="#" alt="Image For checkbox">
+                                <img src="images/logo.svg" id="checkBoxImg" alt="Image For checkbox">
                             </div>
                         </div>
+                    </form>
+
+                    <!--Form for calculating GST-->
+                    <form name="GSTForm">
+                        <!--Heading for the GST Form-->
+                        <div class="form-group row">
+                            <label class="lead">Calculate GST</label>
+                        </div>
+                        <!--Div for label and input-->
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Enter a Number</label>
+                            <!--Div for input-->
+                            <div class="col-sm-9">
+                                <input type="number" id="GSTInput"> 
+                            </div>
+                            <button type="button" onclick="calculateGST()">Calculate</button>
+                        </div>
+                        <!--Label for output GST-->
+                        <label id="GSTAnswerLabel"></label>
                     </form>
                 </div>
             </section>
