@@ -39,6 +39,7 @@ function isVowel(){
     
 }
 
+//displays or hides image if check box is checked or unchecked
 function checkDisplayImg(){
     //Check if check box is checked
     var checked = document.showHideForm.imgCheckBox.checked;
@@ -48,4 +49,12 @@ function checkDisplayImg(){
     }else{
         img.style.display = "none";
     }
+}
+
+function printDay(){
+ 
+    var output = document.getElementById("dateAnswerLabel");
+    const dateFormatter = new Date(document.formatDateForm.dateInput.value);
+    var months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    output.innerHTML = dateFormatter.getDate() + " " + months[dateFormatter.getMonth()] + " " + dateFormatter.getFullYear()
 }

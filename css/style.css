@@ -6,8 +6,11 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	
 	font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
+	/*
 	font-size: 1em;
+	*/
 	
 }
 
@@ -21,10 +24,11 @@ body {
 	
 }
 
+/*
 h1 {
 	font-size: 3em;
 }
-
+*/
 /*commented out because effecting other h2 
 h2 {
 	font-size: 2em;
@@ -35,7 +39,6 @@ h2 {
 .myContainer {
 	margin: 0 auto;
 	width: 95vw;	
-	
 }
 
 /*Style for the brief section*/
@@ -210,6 +213,11 @@ main {
 /*Style for skill box paragraph*/
 #skillBox p {
 	size: 1.2em;
+}
+
+.skillBoxImg {
+	height: 6.0em;
+	width: 6.0em;
 }
 
 /*==================THIS SECTION IS FOR STYLING THE AUTHENTICATION SECTION============================================*/

@@ -10,6 +10,7 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/javaScriptStyle.css">
         <script src="Javascript/javascript.js"></script>
     </head>
     <!--Body-->
@@ -23,7 +24,7 @@
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 			    </button>
-			    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 				    <ul class="navbar-nav">
 					    <li class="nav-item">
 						    <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -42,7 +43,7 @@
 							    XML
 						    </a>
 						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							    <a class="dropdown-item" href="#">XML Rules</a>
+							    <a class="dropdown-item" href="xmlRules.html">XML Rules</a>
 							    <a class="dropdown-item" href="rss.html">XML RSS</a>
 						    </div>
 					    </li>
@@ -51,9 +52,9 @@
 							    Research
 						    </a>
 						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							    <a class="dropdown-item" href="#">SEO</a>
-							    <a class="dropdown-item" href="#">Copyright & Privacy</a>
-							    <a class="dropdown-item" href="#">References</a>
+							    <a class="dropdown-item" href="seoReseach.html">SEO</a>
+							    <a class="dropdown-item" href="copyright.html">Copyright & Privacy</a>
+							    <a class="dropdown-item" href="references.html">References</a>
 						    </div>
 					    </li>
 					    <li class="nav-intem active" id="active">
@@ -75,64 +76,90 @@
             <!--Section for the javascript exercises-->
             <section id="javaScriptSection">
                 <div class="myContainer">
-                    <!--Form for the vowels javascript-->
-                    <form name="vowelsForm">
-                        <!--Heading for Vowels Javascript Exercise-->
-                        <div class="form-group row">
-                            <label class="lead" for="vowels">Only Vowels</label>
-                        </div>
-                        <div class="form-group row">
-                            <label for="title" class="col-sm-3 col-form-label">Enter Vowels</label>
-                            <div class="cpl-sm-9">
-                                <input type="text" class="form-control" id="vowelInput">
+                    <div class="javaBox">
+                        <!--Form for the vowels javascript-->
+                        <form name="vowelsForm">
+                            <!--Heading for Vowels Javascript Exercise-->
+                            <div class="form-group row">
+                                <label class="lead" for="vowels">Only Vowels</label>
                             </div>
-                        </div>
-                        <!--Button for validating vowels-->
-                        <div class="form-group row">
-                            <button type="button" onclick="isVowel()">Validate</button>
-                        </div>
-                        <!--Label for the answer of vowel-->
-                        <div class="form-group row">
-                            <label for="vowelAnswer" id="vowelAnswerLabel"></label>
-                        </div>
-                    </form>
-
-                    <!--Form for showing and hiding an image with javascript-->
-                    <form name="showHideForm">
-                        <!--Heading for image show hid javascript section-->
-                        <div class="form-group row">
-                            <label class="lead">Show and Hide image when checked check box</label>
-                        </div>
-                        <!--Div for image and checkbox-->
-                        <div class="form-group row">
-                            <input type="checkbox" id="imgCheckBox" class="col-sm-3" onclick="checkDisplayImg()">
-                            <!--Div for image-->
-                            <div class="col-sm-9">
-                                <img src="images/logo.svg" id="checkBoxImg" alt="Image For checkbox">
+                            <div class="form-group row">
+                                <label for="title" class="col-sm-3 col-form-label">Enter Vowels</label>
+                                <div class="cpl-sm-9">
+                                    <input type="text" class="form-control" id="vowelInput">
+                                </div>
                             </div>
-                        </div>
-                    </form>
-
-                    <!--Form for calculating GST-->
-                    <form name="GSTForm">
-                        <!--Heading for the GST Form-->
-                        <div class="form-group row">
-                            <label class="lead">Calculate GST</label>
-                        </div>
-                        <!--Div for label and input-->
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Enter a Number</label>
-                            <!--Div for input-->
-                            <div class="col-sm-9">
-                                <input type="number" id="GSTInput"> 
+                            <!--Button for validating vowels-->
+                            <div class="form-group row">
+                                <button type="button" onclick="isVowel()">Validate</button>
                             </div>
-                            <button type="button" onclick="calculateGST()">Calculate</button>
-                        </div>
-                        <!--Label for output GST-->
-                        <label id="GSTAnswerLabel"></label>
-                    </form>
+                            <!--Label for the answer of vowel-->
+                            <div class="form-group row">
+                                <label for="vowelAnswer" id="vowelAnswerLabel"></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="javaBox">
+                        <!--Form for showing and hiding an image with javascript-->
+                        <form name="showHideForm">
+                            <!--Heading for image show hid javascript section-->
+                            <div class="form-group row">
+                                <label class="lead">Show and Hide image when checked check box</label>
+                            </div>
+                            <!--Div for image and checkbox-->
+                            <div class="form-group row">
+                                <input type="checkbox" id="imgCheckBox" class="col-sm-3" onclick="checkDisplayImg()" checked>
+                                <!--Div for image-->
+                                <div class="col-sm-9">
+                                    <img src="images/logo.svg" id="checkBoxImg" alt="Image For checkbox">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="javaBox">
+                        <!--Form for calculating GST-->
+                        <form name="GSTForm">
+                            <!--Heading for the GST Form-->
+                            <div class="form-group row">
+                                <label class="lead">Calculate GST</label>
+                            </div>
+                            <!--Div for label and input-->
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Enter a Number</label>
+                                <!--Div for input-->
+                                <div class="col-sm-9">
+                                    <input type="number" class="form-contol" id="GSTInput"> 
+                                </div>
+                                <button type="button" onclick="calculateGST()">Calculate</button>
+                            </div>
+                            <!--Label for output GST-->
+                            <label id="GSTAnswerLabel"></label>
+                        </form>
+                    </div>
+                    <div class="javaBox">
+                        <!--Form for day-->
+                        <form name="formatDateForm">
+                            <!--Div for label and input-->
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Enter a Date</label>
+                                <!--Div for input-->
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="dateInput"> 
+                                </div>
+                                <button type="button" onclick="printDay()">Format</button>
+                            </div>
+                            <!--Label for output date-->
+                            <label id="dateAnswerLabel"></label>
+                        </form>
+                    </div>  
                 </div>
             </section>
         </main>
+        <!--Footer of the webpage-->
+        <footer>
+                <div class="myContainer">
+                    <p>Created By: Travis Falkenberg</p>
+                </div>
+            </footer>
     </body>
 </html>
