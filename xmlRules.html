@@ -84,23 +84,83 @@
             </section>
             <section class="rulesSection">
                 <div class="myContainer">
+                    
                     <div class="rulesBox">
-                        
+                        <h2>XML Must Have Root Element</h2>
+                        <p>Each XML document has to have a root element. This element (Tag) contains the XML content.</p>
+                        <xmp>
+                            <root>
+                                <author>John Soap</author>
+                                <author>Travis Kid</author>
+                                <author>Terry Fisher</author>
+                            </root>
+                        </xmp>
                     </div>
                     <div class="rulesBox">
-                        
+                       <h2>Tags Must Be Closed</h2> 
+                       <p>You have to close a tag that has been opened but if you do not close the tag it will break the code</p>
+                       <p>Correct:</p>
+                       <xmp>
+                           <author>Travis Falkenberg</author>
+                       </xmp>
+                       <p>Wrong:</p>
+                       <xmp>
+                           <author>Travis Falkeneberg<author>
+                       </xmp>
                     </div>
                     <div class="rulesBox">
-                        
+                        <h2>Tags Must be Correctly Nested</h2>
+                        <p>When you open a tag(Child tag) inside another tag(Parent tag) you must make sure you close the child tag before you close the Parent tag.</p>
+                        <p>Right:</p>
+                        <xmp>
+                            <A><B>Test</B></A>
+                            <b><c>Test</c></b>
+                        </xmp>
+                        <p>Wrong:</p>
+                        <xmp>
+                            <A><B>Test</A></B>
+                            <b><c>Test</b></c>
+                        </xmp>
                     </div>
                     <div class="rulesBox">
-                        
+                        <h2>Tags are Case Sensitive</h2>
+                        <p>Tags of the same name but one starts with a capital letter will be different from the tag that starts with a lower case. Opening tags and closing tags must match exactly</p>
+                        <p>Wrong:</p>
+                        <xmp>
+                            <author>Test</Author>
+                            <AUTHOR>Test</aUTHOR>
+                        </xmp>
+                        <p>Right:</p>
+                        <xmp>
+                            <Author>Test</Author>
+                            <AUTHOR>Test</AUTHOR>
+                        </xmp>
                     </div>
                     <div class="rulesBox">
-                        
+                        <h2>Tag Names Have Strict Linits</h2>
+                        <p>There are quite a few rules and restrictions that the naming convention needs to follow. The Letters XML can not be used at the beginning of the name of a tag. Numbers and punctuation are also not allowed in the beginning of a tag name.</p>
+                        <p>Wrong:</p>
+                        <xmp>
+                            <01_Author>Test</01_Author>
+                            <"Author">Test</"Author">
+                        </xmp>
+                        <p>Right:</p>
+                        <xmp>
+                            <author>Test</author>
+                            <_author>Test</_author>
+                        </xmp>
                     </div>
                     <div class="rulesBox">
-                        
+                        <h2>Tag Names Cannot Contain Spaces</h2>
+                        <p>Spaces in tag names can cause many problems with the data therefore they are prohibited in XML.</p>
+                        <p>Right:</p>
+                        <xmp>
+                            <author>Test</author>
+                        </xmp>
+                        <p>Wrong:</p>
+                        <xmp>
+                            <a uthor>Test</a uthor> 
+                        </xmp>
                     </div>
                 </div>
                 

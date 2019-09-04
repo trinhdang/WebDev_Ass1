@@ -76,7 +76,7 @@ header {
 }
 
 .dropdown-menu {
-	background-color: #415874;
+	background-color: #2a3a4a;
 }
 
 /*Set style for the drop down items of the nav bar*/
@@ -149,6 +149,8 @@ main {
 /*Style the web technologies box*/
 #webTechBox {
 	background-color: #007491;
+	overflow: hidden;
+	padding: 1em 2em 0 2em;
 }
 
 /*Style the web technologies box heading*/
@@ -235,6 +237,7 @@ main {
 #authentication p {
 	size: 1.2em;
 	padding-bottom: 1em;
+	margin-bottom: 0;
 }
 
 #contact {
@@ -244,7 +247,14 @@ main {
 	margin-bottom: 0;
 }
 
+/*=================================THIS STYLE SECTION IS FOR XML RULES WEBPAGE======================================*/
 
+/*Style for rulesBox*/
+.rulesBox {
+	background-color: #E0E0E0;
+	margin: 1em;
+	padding: 1em;
+}
 
 
 input[type=text], select, textarea {
@@ -339,11 +349,14 @@ footer {
 	#showcase {
 		/*width: 80%; ask daniel*/
 		min-height: 30vh;
-		font-size: 1.5em;
+	}
+
+	#showcase p {
+		size: 1.5em;
 	}
 
 	#showcase h1 {
-		font-size: 3.3em;
+		font-size: 2.3em;
 	}
 	/*Change about-me section to fit two elements next to eachother*/
 	#about-me {
@@ -353,5 +366,15 @@ footer {
 	/*laptop style for skillGridContainer*/
 	#skillGridContainer {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+ /*======================MEDIA QUERY FOR LAPTOP===============================================*/
+@media screen and (min-width: 600px){
+	#showcase p {
+		size: 1.3em;
+	}
+
+	#showcase h1 {
+		size: 2em;
 	}
 }
