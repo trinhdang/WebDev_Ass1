@@ -162,10 +162,15 @@ main {
 #webtechBox p {
 	size: 1.1em;
 }
-
+/*---------------------------------STYLE FOR TTHE BIO BOX -------------------------------------*/
 /*Style for the bio box*/
 #bioBox {
 	background-color: #2a9b35;
+	padding: 1em 2em 1em 2em;
+}
+
+#bioImgContainer {
+	text-align: center;
 }
 
 /*Style for bio box heading*/
@@ -186,6 +191,7 @@ main {
 
 /*Style for bio box image*/
 #bioImg {
+	margin:auto;
 	height: 8.0em;
 	width: 8.0em;
 	border-radius: 50%;
@@ -368,7 +374,7 @@ footer {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
- /*======================MEDIA QUERY FOR LAPTOP===============================================*/
+ /*======================MEDIA QUERY FOR Tablets===============================================*/
 @media screen and (min-width: 600px){
 	#showcase p {
 		size: 1.3em;

@@ -4,11 +4,13 @@ function calculateGST(){
     var initalValue = document.GSTForm.GSTInput.value; //get the number from the textbox
     var output = document.getElementById("GSTAnswerLabel"); //set the output
     if(initalValue == isNaN || initalValue > 0){
-        output.innerHTML = "The GST for " + initalValue + " is " + initalValue * 0.15;
+        output.innerHTML = "The GST for $" + initalValue + " is $" + (initalValue * 0.15).toFixed(2);
     }else{
         output.innerHTML = "Please enter a valid value";
     }
     
+    //Clear the text input
+    document.GSTForm.GSTInput.value = "";
 }
 
 //checks if a string has a vowel in it
@@ -36,25 +38,35 @@ function isVowel(){
         output.innerHTML = "Please Enter the correct value";
     }
     
-    
+    //Clear the text input
+    document.vowelsForm.vowelInput.value = "";
 }
 
 //displays or hides image if check box is checked or unchecked
 function checkDisplayImg(){
     //Check if check box is checked
     var checked = document.showHideForm.imgCheckBox.checked;
+    //gets the elemet
     var img = document.showHideForm.checkBoxImg;
     if(checked == true){
+        //Shows the image
         img.style.display = "block";
     }else{
+        //Hides the image
         img.style.display = "none";
     }
+
 }
 
+//formats to a date format. From 2019/6/19 to 19 June 2019
 function printDay(){
  
     var output = document.getElementById("dateAnswerLabel");
     const dateFormatter = new Date(document.formatDateForm.dateInput.value);
     var months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     output.innerHTML = dateFormatter.getDate() + " " + months[dateFormatter.getMonth()] + " " + dateFormatter.getFullYear()
+
+    //Clear the text input
+    document.formatDateForm.dateInput.value = "";
+
 }
