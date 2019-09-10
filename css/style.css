@@ -37,7 +37,8 @@ h2 {
 
 /*Style for div container*/
 .myContainer {
-	margin: 0 auto;
+	margin: 0;
+	padding: 2em;
 	width: 95vw;	
 }
 
