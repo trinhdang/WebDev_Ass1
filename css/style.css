@@ -275,40 +275,6 @@ main {
 	text-indent: 2em;
 }
 
-input[type=text], select, textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
-
-input[type=submit] {
-	margin-bottom: 16px;
-}
-
-input[type=reset] {
-	margin-bottom: 16px;
-}
-
-form {
-	width: 80vw;
-	margin: 0 auto;
-}
-
-#formButton {
-	width: 80vw;
-	margin: 0 auto;
-}
-
-#formSubmitButton {
-	width: 80vw;
-	margin: 0 auto;
-	margin-bottom: 1.5em;
-}
 
 #about-us {
 	padding: 2em 0;
