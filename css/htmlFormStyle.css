@@ -7,6 +7,8 @@ form {
     width: 100%;
 }
 
+/*Media query for laptops*/
+
 @media scren and (min-width: 600px){
     form {
         width: 80vw;
@@ -14,6 +16,8 @@ form {
         margin-right: auto;
     }
 }
+
+/*Media query for desktop*/
 
 @media screen and (min-width: 768px){
     form {

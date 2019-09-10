@@ -37,7 +37,7 @@ h2 {
 
 /*Style for div container*/
 .myContainer {
-	margin: 0;
+	margin: 0 auto;
 	padding: 2em;
 	width: 95vw;	
 }
@@ -263,6 +263,17 @@ main {
 	padding: 1em;
 }
 
+/*==================================STYLE SECTION FOR PRIVACY WEBPAGE=====================================*/
+
+#privacyList {
+	padding-left: 1em;
+}
+
+/*==================================STYLE FOR REFERENCES WEBPAGE=======================================*/
+
+#referencesText {
+	text-indent: 2em;
+}
 
 input[type=text], select, textarea {
 	width: 100%;
@@ -312,7 +323,21 @@ footer {
 	text-align: center;
 }
 
+ /*======================MEDIA QUERY FOR Tablets===============================================*/
+ @media screen and (min-width: 600px){
+	#showcase p {
+		size: 1.3em;
+	}
 
+	#showcase h1 {
+		size: 2em;
+	}
+
+	/*Style for privacy on tablet*/
+	#privacyList {
+		padding-left: 2em;
+	}
+}
 
 /*The below styles will be customised and changed when displaying website on PC/Laptop/ipad/tablet
 */
@@ -374,14 +399,9 @@ footer {
 	#skillGridContainer {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-}
- /*======================MEDIA QUERY FOR Tablets===============================================*/
-@media screen and (min-width: 600px){
-	#showcase p {
-		size: 1.3em;
-	}
 
-	#showcase h1 {
-		size: 2em;
+	/*Style for privacy on desktop*/
+	#privacyList {
+		padding-left: 3em;
 	}
 }
